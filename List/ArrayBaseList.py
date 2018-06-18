@@ -40,7 +40,8 @@ class ArrayBaseList :
 
     # 리스트 출력 함수
     def display(self) :
-            print(self.list)
+        for index in range(self.count) :
+          print(self.list[index])
 
 
 if __name__ == '__main__' :
@@ -54,22 +55,52 @@ if __name__ == '__main__' :
     list.add(50), list.add(60)
 
     # 리스트의 데이터 출력
-    list.display() # [10, 20, 30, 40, 50, 60]
+    print('Add Data')
+    list.display()
+    print()
+    '''
+    Adding Data
+    10
+    20
+    30
+    40
+    50
+    60
+    '''
 
     # 가장 최근에 저장된 데이터 삭제 후 출력
-    print(list.pop()) # 60
+    print('pop : ' + str(list.pop())) # pop : 60
 
     # pop 연산 후 리스트의 데이터 출력
-    list.display() # [10, 20, 30, 40, 50]
+    print('After Pop')
+    list.display()
+    print()
+    '''
+    After pop
+    10
+    20
+    30
+    40
+    50
+    '''
 
     # 두 번째 인덱스의 데이터 삭제
     list.remove(2)
 
     # 삭제 후 리스트의 데이터 출력
-    list.display() # [10, 20, 40, 50]
+    print('After Remove 2nd index item')
+    list.display()
+    print()
+    '''
+    After Remove 2nd index item
+    10
+    20
+    40
+    50
+    '''
 
     # 두 번째 인덱스의 데이터 참조
-    print(list.get(2)) # 40
+    print('Get list[2] : ' + str(list.get(2))) # Get list[2] : 40
 
     # 40 데이터 탐색
-    print(list.search(40)) # [2]
+    print('item(40) in list : ' + str(list.search(40)) + ' index') # item(40) in list : [2] index
