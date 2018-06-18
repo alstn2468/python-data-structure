@@ -25,6 +25,14 @@ Data Structure Made With Python<br/>
 
 <br/>
 
+## 발전된 연결 리스트(Advanced Linked List)
+- 원형 연결 리스트(Circular Linked List)<br/>
+[Code](https://github.com/alstn2468/Python_Data_Structure/blob/master/AdvancedLinkedList/CircularLinkedList.py)
+- 이중 연결 리스트(Doubly Linked List)<br/>
+[Code](https://github.com/alstn2468/Python_Data_Structure/blob/master/AdvancedLinkedList/DoublyLinkedList.py)
+
+<br/>
+
 ## 스택(Stack)
 - 배열로 구현된 스택(Array Base Stack)<br/>
 [Code](https://github.com/alstn2468/Python_Data_Structure/blob/master/Stack/ArrayBaseStack.py)
@@ -46,11 +54,3 @@ Data Structure Made With Python<br/>
 ## 덱(Deque)
 - collections 라이브러리 덱(collections library Deque)<br/>
 [Code](https://github.com/alstn2468/Python_Data_Structure/blob/master/Deque/Deque.py)
-
-<br/>
-
-## 발전된 연결 리스트(Advanced Linked List)
-- 원형 연결 리스트(Circular Linked List)<br/>
-[Code](https://github.com/alstn2468/Python_Data_Structure/blob/master/AdvancedLinkedList/CircularLinkedList.py)
-- 이중 연결 리스트(Doubly Linked List)<br/>
-[Code](https://github.com/alstn2468/Python_Data_Structure/blob/master/AdvancedLinkedList/DoublyLinkedList.py)
