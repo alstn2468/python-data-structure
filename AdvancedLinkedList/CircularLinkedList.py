@@ -39,12 +39,25 @@ class CircularLinkedList :
             self.tail = new_node
 
     # 원형 연결 리스트 맨 앞 삭제 함수
-    def delete_first(self, data) :
-        return
+    def delete_first(self) :
+        del_node = self.head
+        self.head = self.head.next
+        self.tail.next = self.head
+
+        del del_node
 
     # 원형 연결 리스트 맨 뒤 삭제 함수
-    def delete_last(self, data) :
-        return
+    def delete_last(self) :
+        del_node = self.tail
+        p_node = self.head
+
+        while p_node.next is not self.tail :
+            p_node = p_node.next
+
+        p_node.next = del_node.next
+        self.tail = p_node
+
+        del del_node
 
     # 원형 연결 리스트 출력 함수
     def display(self, node) :
@@ -74,13 +87,52 @@ if __name__ == '__main__' :
     Clist.add_first(30), Clist.add_last(60)
 
     # 원형 연결 리스트 데이터 출력
+    print('Add Data')
     Clist.display(Clist.head)
     print('Clist Head : ', Clist.head.data)
     print('Clist Tail : ', Clist.tail.data)
     print('Clist Tail->Next : ', Clist.tail.next.data)
+    print()
     '''
+    Add Data
     30 -> 20 -> 10 -> 40 -> 50 -> 60
     Clist Head : 30
     Clist Tail : 60
     Clist Tail->Next : 30
+    '''
+
+    # 원형 연결 리스트의 맨 앞 데이터 삭제
+    Clist.delete_first()
+
+    # 맨 앞 데이터 삭제 후 데이터 출력
+    print('Delete First Node')
+    Clist.display(Clist.head)
+    print('Clist Head : ', Clist.head.data)
+    print('Clist Tail : ', Clist.tail.data)
+    print('Clist Tail->Next : ', Clist.tail.next.data)
+    print()
+    '''
+    Delete First Node
+    20 -> 10 -> 40 -> 50 -> 60
+    Clist Head : 20
+    Clist Tail : 60
+    Clist Tail->Next : 20
+    '''
+
+    # 원형 연결 리스트의 맨 뒤 데이터 삭제
+    Clist.delete_last()
+
+    # 맨 뒤 데이터 삭제 후 데이터 출력
+    print('Delete Last Node')
+    Clist.display(Clist.head)
+    print('Clist Head : ', Clist.head.data)
+    print('Clist Tail : ', Clist.tail.data)
+    print('Clist Tail->Next : ', Clist.tail.next.data)
+    print()
+    '''
+    Delete Last Node
+    20 -> 10 -> 40 -> 50
+    Clist Head : 20
+    Clist Tail : 50
+    Clist Tail->Next : 20
     '''
