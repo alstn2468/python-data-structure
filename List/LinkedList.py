@@ -162,7 +162,7 @@ if __name__ == '__main__' :
     list.display()
     print()
     '''
-    After pop
+    After Pop
     50 -> 40 -> 30 -> 20 -> 10
     '''
 

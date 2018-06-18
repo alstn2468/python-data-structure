@@ -97,7 +97,7 @@ if __name__ == '__main__' :
     del_count = Dlist.delete_node(30)
     print('Delete item(30) in Dlist\ndel_count : %d' % del_count)
     '''
-    Delete item(30) in Dlist
+    Delete Node(30) in Dlist
     del_count : 2
     '''
 
@@ -105,6 +105,6 @@ if __name__ == '__main__' :
     print('After Remove Data')
     Dlist.display(Dlist.head)
     '''
-    After Remove Data
+    After Remove Node
     50 -> 10 -> 20 -> 60
     '''
