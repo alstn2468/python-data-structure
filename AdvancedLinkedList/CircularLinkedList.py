@@ -7,13 +7,14 @@ class Node :
         self.data = data
         self.next = None
 
-# 원현 연결 리스트의 클래스
+# 원형 연결 리스트의 클래스
 class CircularLinkedList :
 
     def __init__(self) :
         self.head = None
         self.tail = None
 
+    # 원형 연결 리스트 맨 앞 삽입 함수
     def add_first(self, data) :
         new_node = Node(data)
 
@@ -25,6 +26,7 @@ class CircularLinkedList :
             self.head = new_node
             self.tail.next = self.head
 
+    # 원형 연결 리스트 맨 뒤 삽입 함수
     def add_last(self ,data) :
         new_node = Node(data)
 
@@ -36,11 +38,15 @@ class CircularLinkedList :
             self.tail.next = new_node
             self.tail = new_node
 
+    # 원형 연결 리스트 맨 앞 삭제 함수
     def delete_first(self, data) :
         return
+
+    # 원형 연결 리스트 맨 뒤 삭제 함수
     def delete_last(self, data) :
         return
 
+    # 원형 연결 리스트 출력 함수
     def display(self, node) :
         temp = node
 
@@ -55,7 +61,6 @@ class CircularLinkedList :
             temp = temp.next
             if temp is node :
                 break
-
         print()
 
 if __name__ == '__main__' :
