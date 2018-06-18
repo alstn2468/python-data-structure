@@ -54,22 +54,22 @@ if __name__ == '__main__' :
     list.add(50), list.add(60)
 
     # 리스트의 데이터 출력
-    list.display()
+    list.display() # [10, 20, 30, 40, 50, 60]
 
     # 가장 최근에 저장된 데이터 삭제 후 출력
-    print(list.pop())
+    print(list.pop()) # 60
 
     # pop 연산 후 리스트의 데이터 출력
-    list.display()
+    list.display() # [10, 20, 30, 40, 50]
 
     # 두 번째 인덱스의 데이터 삭제
     list.remove(2)
 
     # 삭제 후 리스트의 데이터 출력
-    list.display()
+    list.display() # [10, 20, 40, 50]
 
     # 두 번째 인덱스의 데이터 참조
-    print(list.get(2))
+    print(list.get(2)) # 40
 
     # 40 데이터 탐색
-    print(list.search(40))
+    print(list.search(40)) # [2]
