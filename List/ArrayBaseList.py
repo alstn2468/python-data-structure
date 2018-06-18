@@ -1,5 +1,6 @@
 # ArrayBaseList.py
 
+# 배열 기반 리스트의 클래스
 class ArrayBaseList :
 
     def __init__(self) :
@@ -103,4 +104,4 @@ if __name__ == '__main__' :
     print('Get list[2] : ' + str(list.get(2))) # Get list[2] : 40
 
     # 40 데이터 탐색
-    print('item(40) in list : ' + str(list.search(40)) + ' index') # item(40) in list : [2] index
+    print('Item(40) in list : ' + str(list.search(40)) + ' index') # Item(40) in list : [2] index
