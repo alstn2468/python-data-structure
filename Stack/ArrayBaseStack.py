@@ -5,7 +5,7 @@ class ArrayBaseStack :
 
     def __init__(self, max_length = 50) :
         self.items = []
-        self.top = 0
+        self.top = -1
         self.max_length = max_length
 
     # 스택의 삽입 함수
@@ -21,9 +21,9 @@ class ArrayBaseStack :
         if self.is_empty() :
             raise Exception('STACK EMPTY ERROR!')
 
-        self.top -= 1
         data = self.items[self.top]
         del self.items[self.top]
+        self.top -= 1
 
         return data
 
@@ -32,19 +32,20 @@ class ArrayBaseStack :
         if self.is_empty() :
             raise Exception('STACK EMPTY ERROR!')
 
-        return self.items[self.top - 1]
+        return self.items[self.top]
 
     # 스택이 비어있는지 확인하는 함수
     def is_empty(self) :
-        return self.top == 0
+        return self.top == -1
 
     # 스택이 가득 차있는지 확인하는 함수
     def is_full(self) :
-        return self.top == self.max_length
+        return self.top == self.max_length - 1
 
     # 스택의 출력 함수
     def display(self) :
-        index = self.top - 1
+        index = self.top
+
         while index >= 0 :
             print('│ %3d │' % self.items[index])
             index -= 1
