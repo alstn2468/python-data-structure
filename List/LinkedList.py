@@ -135,9 +135,9 @@ if __name__ == '__main__' :
     '''
 
     # 연결 리스트 데이터 삽입 (정렬 O)
-    list2.add_with_sort(10), list2.add_with_sort(20)
-    list2.add_with_sort(30), list2.add_with_sort(40)
-    list2.add_with_sort(50), list2.add_with_sort(60)
+    list2.add_with_sort(30), list2.add_with_sort(20)
+    list2.add_with_sort(10), list2.add_with_sort(40)
+    list2.add_with_sort(60), list2.add_with_sort(50)
 
     # 연결 리스트 데이터 출력 (정렬 O)
     print('Add Data With Sort')
