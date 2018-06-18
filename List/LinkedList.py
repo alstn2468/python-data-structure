@@ -16,7 +16,7 @@ class LinkedList :
         self.count = 0
         self.sort = sort if sort else lambda x, y : x > y
 
-    # 데이터를 앞에 삽입하는 함수
+    # 데이터 삽입 함수
     def add(self, data) :
         new_node = Node(data, self.head.next)
         self.head.next = new_node
@@ -28,7 +28,7 @@ class LinkedList :
 
         return new_node
 
-    # 데이터를 뒤에 삽입하는 함수
+    # 데이터 정렬 삽입 함수
     def add_with_sort(self, data) :
         new_node = Node(data, None)
         prev = self.head
