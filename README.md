@@ -5,6 +5,7 @@ Data Structure Made With Python<br/>
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 ---------------------------------
 
+<br/>
 
 ## 제작자 : [김민수](https://github.com/alstn2468)
 ### Soonchunhyang University<br/>Department of Computer Software Engineering
@@ -14,6 +15,7 @@ Data Structure Made With Python<br/>
 [ [Webpage](https://kimminsu.ml) ]<br/>
 - - -
 
+<br/>
 
 ## 리스트(List)
 - 배열로 구현된 리스트(ArrayBaseList)<br/>
