@@ -20,3 +20,10 @@ Data Structure Made With Python<br/>
 [Code](https://github.com/alstn2468/Python_Data_Structure/blob/master/List/ArrayBaseList.py)
 - 연결 리스트(LinkedList)<br/>
 [Code](https://github.com/alstn2468/Python_Data_Structure/blob/master/List/LinkedList.py)
+
+
+## 스택(Stack)
+- 배열로 구현된 스택(ArrayBaseStack)<br/>
+[Code](https://github.com/alstn2468/Python_Data_Structure/blob/master/Stack/ArrayBaseStack.py)
+- 연결 리스트로 구현된 스택(LinkedListBaseStack)<br/>
+[Code](https://github.com/alstn2468/Python_Data_Structure/blob/master/Stack/LinkedListBaseStack.py)
