@@ -86,8 +86,20 @@ if __name__ == '__main__' :
     Dlist.add_first(50), Dlist.add_last(60)
 
     # 이중 연결 리스트의 데이터 출력
-    Dlist.display(Dlist.head)  # 50 -> 30 -> 10 -> 20 -> 30 -> 60
+    print('Add Data')
+    Dlist.display(Dlist.head)
+    '''
+    Add Data
+    50 -> 30 -> 10 -> 20 -> 30 -> 60
+    '''
 
+    # 이중 연결 리스트의 데이터 삭제
     print('Delete ' + str(Dlist.delete_node(30)) + ' item(30) in Dlist') # Delete 2 item(30) in Dlist
 
-    Dlist.display(Dlist.head) # 50 -> 10 -> 20 -> 60
+    # 이중 연결 리스트의 삭제 후 데이터 출력
+    print('After Remove Data')
+    Dlist.display(Dlist.head)
+    '''
+    After Remove Data
+    50 -> 10 -> 20 -> 60
+    '''
