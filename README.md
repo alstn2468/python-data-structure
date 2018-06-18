@@ -21,6 +21,7 @@ Data Structure Made With Python<br/>
 - 연결 리스트(LinkedList)<br/>
 [Code](https://github.com/alstn2468/Python_Data_Structure/blob/master/List/LinkedList.py)
 
+<br/>
 
 ## 스택(Stack)
 - 배열로 구현된 스택(ArrayBaseStack)<br/>
