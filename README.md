@@ -1,14 +1,9 @@
 파이썬으로 구현한 자료구조
 ================================
-Data Structure Made With Python
----------------------------------
-
-<br/>
-
+Data Structure Made With Python<br/>
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-
-<br/>
+---------------------------------
 
 <br/>
 
