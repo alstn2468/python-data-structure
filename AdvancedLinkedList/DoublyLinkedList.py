@@ -94,7 +94,12 @@ if __name__ == '__main__' :
     '''
 
     # 이중 연결 리스트의 데이터 삭제
-    print('Delete ' + str(Dlist.delete_node(30)) + ' item(30) in Dlist') # Delete 2 item(30) in Dlist
+    del_count = Dlist.delete_node(30)
+    print('Delete item(30) in Dlist\ndel_count : %d' % del_count)
+    '''
+    Delete item(30) in Dlist
+    del_count : 2
+    '''
 
     # 이중 연결 리스트의 삭제 후 데이터 출력
     print('After Remove Data')
