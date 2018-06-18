@@ -106,7 +106,12 @@ class LinkedList :
 
         while current.next :
             current = current.next
-            print(current.data)
+
+            if current.next is None :
+                print(str(current.data), end = "")
+
+            else :
+                print(str(current.data) + ' -> ', end = "")
 
 
 if __name__ == '__main__' :
@@ -126,12 +131,7 @@ if __name__ == '__main__' :
     print()
     '''
     Add Data With No Sort
-    60
-    50
-    40
-    30
-    20
-    10
+    60 -> 50 -> 40 -> 30 -> 20 -> 10
     '''
 
     # 연결 리스트 데이터 삽입 (정렬 O)
@@ -145,12 +145,7 @@ if __name__ == '__main__' :
     print()
     '''
     Add Data With Sort
-    10
-    20
-    30
-    40
-    50
-    60
+    10 -> 20 -> 30 -> 40 -> 50 -> 60
     '''
 
     # 두 번째 노드의 데이터 참조
@@ -160,7 +155,7 @@ if __name__ == '__main__' :
     print('Item(40) In List : ' + str(list.search(40))) # Item(40) In List : [<__main__.Node object at 0x03214A90>]
 
     # 가장 최근에 저장된 데이터 삭제 후 출력
-    print('Pop : ' + str(list.pop().data) + '\n') # Pop : 60
+    print('Pop : ' + str(list.pop().data)) # Pop : 60
 
     # pop 연산 후 리스트의 데이터 출력
     print('After Pop')
@@ -168,11 +163,7 @@ if __name__ == '__main__' :
     print()
     '''
     After pop
-    50
-    40
-    30
-    20
-    10
+    50 -> 40 -> 30 -> 20 -> 10
     '''
 
     # 두 번째 노드의 데이터 삭제
@@ -183,8 +174,5 @@ if __name__ == '__main__' :
     list.display()
     '''
     After Remove 2nd Node Item
-    50
-    40
-    20
-    10
+    50 -> 40 -> 20 -> 10
     '''

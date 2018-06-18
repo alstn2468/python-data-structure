@@ -42,7 +42,7 @@ class ArrayBaseList :
     # 리스트 출력 함수
     def display(self) :
         for index in range(self.count) :
-          print(self.list[index])
+          print(str(self.list[index]) + ' ', end = "")
 
 
 if __name__ == '__main__' :
@@ -61,12 +61,7 @@ if __name__ == '__main__' :
     print()
     '''
     Adding Data
-    10
-    20
-    30
-    40
-    50
-    60
+    10 20 30 40 50 60
     '''
 
     # 가장 최근에 저장된 데이터 삭제 후 출력
@@ -78,11 +73,7 @@ if __name__ == '__main__' :
     print()
     '''
     After pop
-    10
-    20
-    30
-    40
-    50
+    10 20 30 40 50
     '''
 
     # 두 번째 인덱스의 데이터 삭제
@@ -91,13 +82,10 @@ if __name__ == '__main__' :
     # 삭제 후 리스트의 데이터 출력
     print('After Remove 2nd index item')
     list.display()
-    print()
+    print() 
     '''
     After Remove 2nd index item
-    10
-    20
-    40
-    50
+    10 20 40 50
     '''
 
     # 두 번째 인덱스의 데이터 참조
