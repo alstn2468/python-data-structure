@@ -49,7 +49,7 @@ Data Structure Made With Python<br/>
 
 <br/>
 
-## 발전된 연결 리스트(AdvancedLinkedList)
+## 발전된 연결 리스트(Advanced Linked List)
 - 원형 연결 리스트(Circular Linked List)<br/>
 [Code](https://github.com/alstn2468/Python_Data_Structure/blob/master/AdvancedLinkedList/CircularLinkedList.py)
 - 이중 연결 리스트(Doubly Linked List)<br/>
