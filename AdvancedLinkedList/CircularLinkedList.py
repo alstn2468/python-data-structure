@@ -1,13 +1,13 @@
 # CircularLinkedList.py
 
-# 원형 연결 리스트의 노드 클래스
+# 원형 연결 리스트 노드 클래스
 class Node :
 
     def __init__(self, data) :
         self.data = data
         self.next = None
 
-# 원형 연결 리스트의 클래스
+# 원형 연결 리스트 클래스
 class CircularLinkedList :
 
     def __init__(self) :

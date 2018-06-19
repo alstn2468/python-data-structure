@@ -1,6 +1,6 @@
 # DoublyLinkedList.py
 
-# 이중 연결 리스트의 노드 클래스
+# 이중 연결 리스트 노드 클래스
 class Node :
 
     def __init__(self, data) :
@@ -8,14 +8,14 @@ class Node :
         self.next = None
         self.prev = None
 
-# 이중 연결 리스트의 클래스
+# 이중 연결 리스트 클래스
 class DoublyLinkedList :
 
     def __init__(self) :
         self.head = None
         self.tail = None
 
-    # 이중 연결 리스트의 맨 앞 삽입 함수
+    # 이중 연결 리스트 맨 앞 삽입 함수
     def add_first(self, data) :
         new_node = Node(data)
         new_node.next = self.head
@@ -28,7 +28,7 @@ class DoublyLinkedList :
 
         self.head = new_node
 
-    # 이중 연결 리스트의 맨 뒤 삽입 함수
+    # 이중 연결 리스트 맨 뒤 삽입 함수
     def add_last(self, data) :
         new_node = Node(data)
         new_node.prev = self.tail
@@ -41,7 +41,7 @@ class DoublyLinkedList :
 
         self.tail = new_node
 
-    # 이중 연결 리스트의 특정 노드 삭제 함수
+    # 이중 연결 리스트 특정 노드 삭제 함수
     def delete_node(self, data) :
         del_node = self.head
         count = 0
@@ -60,7 +60,7 @@ class DoublyLinkedList :
 
         return count
 
-    # 이중 연결 리스트의 출력 함수
+    # 이중 연결 리스트 출력 함수
     def display(self, node) :
         while(node is not None) :
 

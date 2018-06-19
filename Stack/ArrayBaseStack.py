@@ -8,7 +8,7 @@ class ArrayBaseStack :
         self.top = -1
         self.max_length = max_length
 
-    # 스택의 삽입 함수
+    # 배열 기반 스택 삽입 함수
     def push(self, data) :
         if self.is_full() :
             raise Exception('STACK FULL ERROR!')
@@ -16,7 +16,7 @@ class ArrayBaseStack :
         self.items.append(data)
         self.top += 1
 
-    # 스택의 삭제 함수
+    # 배열 기반 스택 삭제 함수
     def pop(self) :
         if self.is_empty() :
             raise Exception('STACK EMPTY ERROR!')
@@ -27,22 +27,22 @@ class ArrayBaseStack :
 
         return data
 
-    # 스택의 참조 함수
+    # 배열 기반 스택 참조 함수
     def peek(self) :
         if self.is_empty() :
             raise Exception('STACK EMPTY ERROR!')
 
         return self.items[self.top]
 
-    # 스택이 비어있는지 확인하는 함수
+    # 배열 기반 스택 공백 확인 함수
     def is_empty(self) :
         return self.top == -1
 
-    # 스택이 가득 차있는지 확인하는 함수
+    # 배열 기반 스택 포화 확인 함수
     def is_full(self) :
         return self.top == self.max_length - 1
 
-    # 스택의 출력 함수
+    # 배열 기반 스택 출력 함수
     def display(self) :
         index = self.top
 
