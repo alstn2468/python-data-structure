@@ -52,6 +52,12 @@ if __name__ == '__main__' :
     # 배열 기반 선형 큐 클래스 선언
     queue = ArrayBaseQueue()
 
+    # 배열 기반 선형 큐 공백 확인
+    print('Is Empty : %s' % queue.is_empty())
+    '''
+    Is Empty : True
+    '''
+
     # 배열 기반 선형 큐 데이터 삽입
     queue.enqueue(10), queue.enqueue(20)
     queue.enqueue(30), queue.enqueue(40)

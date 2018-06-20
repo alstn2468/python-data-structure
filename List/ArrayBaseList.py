@@ -1,22 +1,22 @@
 # ArrayBaseList.py
 
-# 배열 기반 리스트의 클래스
+# 배열 기반 리스트 클래스
 class ArrayBaseList :
 
     def __init__(self) :
         self.list = []
         self.count = 0
 
-    # 데이터 삽입 함수
+    # 배열 기반 리스트 삽입 함수
     def add(self, data) :
         self.list.append(data)
         self.count += 1
 
-    # 데이터 탐색 함수
+    # 배열 기반 리스트 탐색 함수
     def search(self, data) :
         return [index for index, stored in enumerate(self.list) if stored == data]
 
-    # 데이터 참조 함수
+    # 배열 기반 리스트 참조 함수
     def get(self, index) :
         if 0 <= index < self.count :
             return self.list[index]
@@ -31,7 +31,7 @@ class ArrayBaseList :
 
         return val
 
-    # 데이터 삭제 함수
+    # 배열 기반 리스트 삭제 함수
     def remove(self, index) :
         for index in range(index, self.count - 1) :
             self.list[index] = self.list[index + 1]
@@ -39,7 +39,7 @@ class ArrayBaseList :
         del self.list[self.count - 1]
         self.count -= 1
 
-    # 리스트 출력 함수
+    # 배열 기반 리스트 출력 함수
     def display(self) :
         for index in range(self.count) :
           print(str(self.list[index]) + ' ', end = "")
@@ -47,20 +47,20 @@ class ArrayBaseList :
 
 if __name__ == '__main__' :
 
-    # 리스트 클래스 선언
+    # 배열 기반 리스트 클래스 선언
     list = ArrayBaseList()
 
-    # 리스트에 데이터 삽입
+    # 배열 기반 리스트 데이터 삽입
     list.add(10), list.add(20)
     list.add(30), list.add(40)
     list.add(50), list.add(60)
 
-    # 리스트의 데이터 출력
+    # 배열 기반 리스트 데이터 출력
     print('Add Data')
     list.display()
     print()
     '''
-    Adding Data
+    Add Data
     10 20 30 40 50 60
     '''
 
@@ -72,7 +72,7 @@ if __name__ == '__main__' :
     list.display()
     print()
     '''
-    After pop
+    After Pop
     10 20 30 40 50
     '''
 
@@ -82,7 +82,7 @@ if __name__ == '__main__' :
     # 삭제 후 리스트의 데이터 출력
     print('After Remove 2nd index item')
     list.display()
-    print() 
+    print()
     '''
     After Remove 2nd index item
     10 20 40 50

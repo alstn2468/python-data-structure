@@ -43,6 +43,9 @@ class DoublyLinkedList :
 
     # 이중 연결 리스트 특정 노드 삭제 함수
     def delete_node(self, data) :
+        if self.is_empty() :
+            raise Exception('LIST EMPTY ERROR!')
+            
         del_node = self.head
         count = 0
 
@@ -59,6 +62,10 @@ class DoublyLinkedList :
             del_node = del_node.next
 
         return count
+
+    # 이중 연결 리스트 공백 확인 함수
+    def is_empty(self) :
+        return self.head == None and self.tail == None
 
     # 이중 연결 리스트 출력 함수
     def display(self, node) :
@@ -79,6 +86,12 @@ if __name__ == '__main__' :
 
     # 이중 연결 리스트 클래스 선언
     Dlist = DoublyLinkedList()
+
+    # 이중 연결 리스트 공백 확인
+    print('Is Empty : %s' % Dlist.is_empty())
+    '''
+    Is Empty : True
+    '''
 
     # 이중 연결 리스트 데이터 삽입
     Dlist.add_first(10), Dlist.add_last(20)

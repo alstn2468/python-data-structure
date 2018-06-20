@@ -40,6 +40,9 @@ class CircularLinkedList :
 
     # 원형 연결 리스트 맨 앞 삭제 함수
     def delete_first(self) :
+        if self.is_empty() :
+            raise Exception('LIST EMPTY ERROR!')
+
         del_node = self.head
         self.head = self.head.next
         self.tail.next = self.head
@@ -48,6 +51,9 @@ class CircularLinkedList :
 
     # 원형 연결 리스트 맨 뒤 삭제 함수
     def delete_last(self) :
+        if self.is_empty() :
+            raise Exception('LIST EMPTY ERROR!')
+            
         del_node = self.tail
         p_node = self.head
 
@@ -58,6 +64,10 @@ class CircularLinkedList :
         self.tail = p_node
 
         del del_node
+
+    # 원형 연결 리스트 공백 확인 함수
+    def is_empty(self) :
+        return self.head == None and self.tail == None
 
     # 원형 연결 리스트 출력 함수
     def display(self, node) :
@@ -80,6 +90,12 @@ if __name__ == '__main__' :
 
     # 원형 연결 리스트 클래스 선언
     Clist = CircularLinkedList()
+
+    # 원형 연결 리스트 공백 확인
+    print('Is Empty : %s' % Clist.is_empty())
+    '''
+    Is Empty : True
+    '''
 
     # 원형 연결 리스트 데이터 삽입
     Clist.add_first(10), Clist.add_last(40)
