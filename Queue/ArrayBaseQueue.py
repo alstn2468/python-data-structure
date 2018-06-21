@@ -4,7 +4,7 @@
 class ArrayBaseQueue :
 
     def __init__(self, max = 50) :
-        self.items = []
+        self.items = [0 for i in range(max)]
         self.front = 0
         self.rear = 0
         self.max_length = max
