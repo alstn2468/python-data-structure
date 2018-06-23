@@ -54,3 +54,11 @@ Data Structure Made With Python<br/>
 ## 덱(Deque)
 - collections 라이브러리 덱(collections library Deque)<br/>
 [Code](https://github.com/alstn2468/Python_Data_Structure/blob/master/Deque/Deque.py)
+
+<br/>
+
+## 트리(Truee)
+- 이진 트리(Binary Tree)<br/>
+[Code](https://github.com/alstn2468/Python_Data_Structure/blob/master/Tree/BinaryTree.py)
+- 이진 탐색 트리(Binary Search Tree)<br/>
+[Code](https://github.com/alstn2468/Python_Data_Structure/blob/master/Tree/BinarySearchTree.py)
