@@ -57,8 +57,26 @@ Data Structure Made With Python<br/>
 
 <br/>
 
-## 트리(Truee)
+## 트리(Tree)
 - 이진 트리(Binary Tree)<br/>
 [Code](https://github.com/alstn2468/Python_Data_Structure/blob/master/Tree/BinaryTree.py)
 - 이진 탐색 트리(Binary Search Tree)<br/>
 [Code](https://github.com/alstn2468/Python_Data_Structure/blob/master/Tree/BinarySearchTree.py)
+
+<br/>
+
+## 정렬(Sorting)
+- 버블 정렬(Bubble Sort)<br/>
+[Code](https://github.com/alstn2468/Python_Data_Structure/blob/master/Sorting/BubbleSort.py)
+- 힙 정렬(Heap Sort)<br/>
+[Code](https://github.com/alstn2468/Python_Data_Structure/blob/master/Sorting/HeapSort.py)
+- 삽입 정렬(Bubble Sort)<br/>
+[Code](https://github.com/alstn2468/Python_Data_Structure/blob/master/Sorting/InsertionSort.py)
+- 병합 정렬(Bubble Sort)<br/>
+[Code](https://github.com/alstn2468/Python_Data_Structure/blob/master/Sorting/MergeSort.py)
+- 퀵 정렬(Bubble Sort)<br/>
+[Code](https://github.com/alstn2468/Python_Data_Structure/blob/master/Sorting/QuickSort.py)
+- 기수 정렬(Bubble Sort)<br/>
+[Code](https://github.com/alstn2468/Python_Data_Structure/blob/master/Sorting/RadixSort.py)
+- 선택 정렬(Bubble Sort)<br/>
+[Code](https://github.com/alstn2468/Python_Data_Structure/blob/master/Sorting/SelectionSort.py)
