@@ -70,13 +70,13 @@ Data Structure Made With Python<br/>
 [Code](https://github.com/alstn2468/Python_Data_Structure/blob/master/Sorting/BubbleSort.py)
 - 힙 정렬(Heap Sort)<br/>
 [Code](https://github.com/alstn2468/Python_Data_Structure/blob/master/Sorting/HeapSort.py)
-- 삽입 정렬(Bubble Sort)<br/>
+- 삽입 정렬(Insertion Sort)<br/>
 [Code](https://github.com/alstn2468/Python_Data_Structure/blob/master/Sorting/InsertionSort.py)
-- 병합 정렬(Bubble Sort)<br/>
+- 병합 정렬(Merge Sort)<br/>
 [Code](https://github.com/alstn2468/Python_Data_Structure/blob/master/Sorting/MergeSort.py)
-- 퀵 정렬(Bubble Sort)<br/>
+- 퀵 정렬(Quick Sort)<br/>
 [Code](https://github.com/alstn2468/Python_Data_Structure/blob/master/Sorting/QuickSort.py)
-- 기수 정렬(Bubble Sort)<br/>
+- 기수 정렬(Radix Sort)<br/>
 [Code](https://github.com/alstn2468/Python_Data_Structure/blob/master/Sorting/RadixSort.py)
-- 선택 정렬(Bubble Sort)<br/>
+- 선택 정렬(Selection Sort)<br/>
 [Code](https://github.com/alstn2468/Python_Data_Structure/blob/master/Sorting/SelectionSort.py)
