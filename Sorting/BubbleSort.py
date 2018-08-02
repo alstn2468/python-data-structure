@@ -3,6 +3,11 @@
 버블정렬 (BubbleSort)
 O(n²)
 '''
+def swap(val1, val2) :
+    temp = val1
+    val1 = val2
+    val2 = temp
+
 def BubbleSort(list) :
     for i in range(len(list)) :
 
