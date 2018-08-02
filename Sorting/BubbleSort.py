@@ -1,6 +1,6 @@
 # BubbleSort.py
 '''
-버블정렬 (BubbleSort)
+버블정렬 (Bubble Sort)
 O(n²)
 '''
 def swap(val1, val2) :

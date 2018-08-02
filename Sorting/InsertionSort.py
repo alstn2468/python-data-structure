@@ -1,11 +1,20 @@
 # InsertionSort.py
+'''
+삽입정렬(Insertion Sort)
+O(n²)
+'''
 def InsertionSort(list) :
-    result = []
+    for i in range(1, len(list)) :
+        key = list[i]
+        j = i - 1
 
-    while(list) :
-        result.append(list.pop(list.index(min(list))))
+        while j >= 0 and key < list[j] :
+            list[j + 1] = list[j]
+            j -= 1
 
-    return result
+        list[j + 1] = key
+
+    return list
 
 if __name__ == '__main__' :
     # 정렬할 리스트 선언
