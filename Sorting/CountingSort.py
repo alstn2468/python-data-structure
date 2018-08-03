@@ -5,7 +5,7 @@ O(n)
 '''
 def CountingSort(list) :
     result = []
-    count = [0] * 100001
+    count = [0] * 10001
 
     for i in list :
         count[i] += 1
