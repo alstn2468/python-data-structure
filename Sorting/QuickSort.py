@@ -4,7 +4,29 @@
 O(nlogn)
 '''
 def QuickSort(list) :
-    pass
+    less = []
+    pivotList = []
+    more = []
+
+    if len(list) <= 1 :
+        return list
+
+    else :
+        pivot = list[0]
+        for i in list :
+            if i < pivot :
+                less.append(i)
+
+            elif i > pivot :
+                more.append(i)
+
+            else :
+                pivotList.append(i)
+
+        less = QuickSort(less)
+        more = QuickSort(more)
+
+        return less + pivotList + more
 
 if __name__ == '__main__' :
     # 정렬할 리스트 선언
