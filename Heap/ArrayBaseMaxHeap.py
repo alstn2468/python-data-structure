@@ -28,15 +28,36 @@ class ArrayBaseMaxHeap :
 
         self.data[i] = data
 
-    # 배열 기반 치대 히프 삭제 함수
+    # 배열 기반 최대 히프 삭제 함수
     def delete_max_heap(self) :
-        pass
+        parent, child = 1, 2
 
+        item = self.data[1]
+        temp = self.data[self.count]
+        self.count -= 1
+
+        while child <= self.count :
+            if child < self.count and self.data[child] < self.data[child + 1] :
+                child += 1
+
+            if temp >= self.data[child] :
+                break
+
+            self.data[parent] = self.data[child]
+            parent, child = child, child * 2
+
+        self.data[parent] = temp;
+
+        return item;
+
+    # 배열 기반 최대 히프 중위 순회 함수
     def inorder_traversal(self, idx) :
         if idx > self.count :
             return
 
-        inorder_traversal(2 * idx);
+        self.inorder_traversal(2 * idx)
+        print(self.data[idx], end = " ")
+        self.inorder_traversal(2 * idx + 1)
 
 
 if __name__ == '__main__' :
@@ -45,13 +66,13 @@ if __name__ == '__main__' :
     Heap = ArrayBaseMaxHeap(50)
 
     # 배열 기반 최대 히프 공백 확인
-    print("Heap.is_empty() : "+ str(Heap.is_empty()))
+    print("Heap.is_empty() : "+ str(Heap.is_empty()) + '\n')
     '''
     Heap.is_empty() : True
     '''
 
     # 배열 기반 최대 히프 포화 확인
-    print("Heap.isfull() : " + str(Heap.is_full()))
+    print("Heap.isfull() : " + str(Heap.is_full()) + '\n')
     '''
     Heap.isfull() : False
     '''
@@ -67,4 +88,23 @@ if __name__ == '__main__' :
                 60
         50              40
     10      30      20
+    '''
+
+    # 배열 기반 최대 히프 데이터 중위 순회 출력
+    print("- Heap Inorder Traversal -")
+    Heap.inorder_traversal(1)
+    print('\n')
+    '''
+    - Heap Inorder Traversal -
+    10 50 30 60 20 40
+    '''
+
+    # 배열 기반 최대 히프 모든 데이터 삭제
+    print("- Heap Delete Method Test -")
+    for _ in range(Heap.count) :
+        print(Heap.delete_max_heap(), end = " ")
+    print()
+    '''
+    - Heap Delete Method Test -
+    60 50 40 30 20 10
     '''
