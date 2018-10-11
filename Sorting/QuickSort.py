@@ -3,32 +3,31 @@
 퀵정렬(QuickSort)
 O(nlogn)
 '''
-def QuickSort(list) :
-    less = []
-    pivotList = []
-    more = []
 
-    if len(list) <= 1 :
-        return list
+def partition(list, low, high) :
+    i = low - 1
+    pivot = list[high]
 
-    else :
-        pivot = list[0]
-        for i in list :
-            if i < pivot :
-                less.append(i)
+    for j in range(low, high) :
 
-            elif i > pivot :
-                more.append(i)
+        if list[j] < pivot :
+            i += 1
+            list[i], list[j] = list[j], list[i]
 
-            else :
-                pivotList.append(i)
+    list[i + 1], list[high] = list[high], list[i + 1]
 
-        less = QuickSort(less)
-        more = QuickSort(more)
+    return i + 1
 
-        return less + pivotList + more
+def QuickSort(list, low, high) :
+    if low < high :
+        pi = partition(list, low, high)
+
+        QuickSort(list, low, pi - 1)
+        QuickSort(list, pi + 1, high)
+
 
 if __name__ == '__main__' :
+
     # 정렬할 리스트 선언
     list = [1, 3, 2, 4, 5, 7, 6, 9, 8]
 
@@ -40,9 +39,12 @@ if __name__ == '__main__' :
     [1, 3, 2, 4, 5, 7, 6, 9, 8]
     '''
 
+    # 데이터 정렬
+    QuickSort(list, 0, len(list) - 1)
+
     # 정렬 후 리스트 출력
     print('- After Sorting -')
-    print(QuickSort(list))
+    print(list)
     '''
     - After Sorting -
     [1, 2, 3, 4, 5, 6, 7, 8, 9]

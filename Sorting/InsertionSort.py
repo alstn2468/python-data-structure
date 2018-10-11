@@ -3,6 +3,7 @@
 삽입정렬(Insertion Sort)
 O(n²)
 '''
+
 def InsertionSort(list) :
     for i in range(1, len(list)) :
         key = list[i]
@@ -17,6 +18,7 @@ def InsertionSort(list) :
     return list
 
 if __name__ == '__main__' :
+    
     # 정렬할 리스트 선언
     list = [1, 3, 2, 4, 5, 7, 6, 9, 8]
 

@@ -3,6 +3,7 @@
 선택정렬(Selection Sort)
 O(n²)
 '''
+
 def SelectionSort(list) :
     result = []
 
@@ -12,6 +13,7 @@ def SelectionSort(list) :
     return result
 
 if __name__ == '__main__' :
+    
     # 정렬할 리스트 선언
     list = [1, 3, 2, 4, 5, 7, 6, 9, 8]
 

@@ -3,6 +3,7 @@
 계수정렬(CountingSort)
 O(n)
 '''
+
 def CountingSort(list) :
     result = []
     count = [0] * 10001
@@ -18,6 +19,7 @@ def CountingSort(list) :
     return result
 
 if __name__ == '__main__' :
+    
     # 정렬할 리스트 선언
     list = [1, 3, 2, 4, 5, 7, 6, 9, 8]
 

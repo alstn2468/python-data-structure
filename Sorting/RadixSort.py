@@ -3,6 +3,7 @@
 기수정렬(RadixSort)
 O(n)
 '''
+
 def CountingSort(list, exp1) :
     n = len(list)
 
@@ -37,6 +38,7 @@ def RadixSort(list) :
         exp *= 10
 
 if __name__ == '__main__' :
+
     # 정렬할 리스트 선언
     list = [1, 3, 2, 4, 5, 7, 6, 9, 8]
 
@@ -48,6 +50,7 @@ if __name__ == '__main__' :
     [1, 3, 2, 4, 5, 7, 6, 9, 8]
     '''
 
+    # 데이터 정렬
     RadixSort(list)
 
     # 정렬 후 리스트 출력
