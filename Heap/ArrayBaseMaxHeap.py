@@ -19,6 +19,10 @@ class ArrayBaseMaxHeap :
 
     # 배열 기반 최대 히프 삽입 함수
     def insert_max_heap(self, data) :
+        if self.is_full() :
+            print('HEAP FULL ERROR!')
+            return
+
         self.count += 1
         i = self.count
 
@@ -30,6 +34,10 @@ class ArrayBaseMaxHeap :
 
     # 배열 기반 최대 히프 삭제 함수
     def delete_max_heap(self) :
+        if self.is_empty() :
+            print('HEAP EMPTY ERROR!')
+            return
+
         parent, child = 1, 2
 
         item = self.data[1]
