@@ -1,4 +1,4 @@
-# Graph.py
+# ALGraph.py
 
 # 그래프 클래스 선언
 class Graph :

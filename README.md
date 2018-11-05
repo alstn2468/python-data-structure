@@ -90,8 +90,10 @@ Data Structure Made With Python<br/>
 <br/>
 
 ## 그래프(Graph)
-- 그래프(Graph)<br/>
-[[Code]](https://github.com/alstn2468/Python_Data_Structure/blob/master/Graph/Graph.py)
+- 인접 행렬 그래프(AMGraph)<br/>
+[[Code]](https://github.com/alstn2468/Python_Data_Structure/blob/master/Graph/AMGraph.py)
+- 인접 리스트 그래프(ALGraph)<br/>
+[[Code]](https://github.com/alstn2468/Python_Data_Structure/blob/master/Graph/ALGraph.py)
 - 크루스칼 알고리즘(Kruskal Algorithm)<br/>
 [[Code]](https://github.com/alstn2468/Python_Data_Structure/blob/master/Graph/Kruskal.py)
 - 프림 알고리즘(Prim Algorithm)<br/>
