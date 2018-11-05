@@ -94,3 +94,5 @@ Data Structure Made With Python<br/>
 [[Code]](https://github.com/alstn2468/Python_Data_Structure/blob/master/Graph/Graph.py)
 - 크루스칼 알고리즘(Kruskal Algorithm)<br/>
 [[Code]](https://github.com/alstn2468/Python_Data_Structure/blob/master/Graph/Kruskal.py)
+- 프림 알고리즘(Prim Algorithm)<br/>
+[[Code]](https://github.com/alstn2468/Python_Data_Structure/blob/master/Graph/Prim.py)
