@@ -1,4 +1,4 @@
-# ALGraph.py
+# Graph.py
 
 
 class Graph :
