@@ -71,7 +71,7 @@ class Graph :
             self.insert_edge(edge[0], edge[1])
 
     # 그래프 인접 리스트 반환 함수
-    def adjacency_list(self) :
+    def print_adjacency_list(self) :
         if len(self.vertices) >= 1 :
             for key in self.vertices.keys() :
                 print(str(key) + " : " + str(self.vertices[key]))
@@ -80,7 +80,7 @@ class Graph :
             print(dict())
 
     # 그래프 인접 행렬 반환 함수
-    def adjacency_matrix(self) :
+    def print_adjacency_matrix(self) :
         if len(self.vertices) >= 1 :
             import numpy as np
 
@@ -115,7 +115,7 @@ if __name__ == '__main__' :
     d.insert_neighbor(c)
     e.insert_neighbors([a, c])
     '''
-    현재 정점 상태
+    현재 그래프 상태
     'A' : ['B', 'C', 'E']
     'B' : ['A', 'C']
     'C' : ['A', 'B', 'D', 'E']
@@ -131,7 +131,7 @@ if __name__ == '__main__' :
 
     # 그래프 인접 리스트 출력
     print("- Graph Adjacency List -")
-    g.adjacency_list()
+    g.print_adjacency_list()
     '''
     - Graph Adjacency List -
     A : ['B', 'C', 'E']
@@ -145,7 +145,7 @@ if __name__ == '__main__' :
 
     # 그래프 인접 행렬 출력
     print("- Graph Adjacency Matrix -")
-    g.adjacency_matrix()
+    g.print_adjacency_matrix()
     '''
     - Graph Adjacency Matrix -
     [[ 0.  1.  1.  0.  1.]
@@ -160,7 +160,7 @@ if __name__ == '__main__' :
     # 그래프 간선 삽입
     g.insert_edge(b, d)
     '''
-    현재 정점 상태
+    현재 그래프 상태
     'A' : ['B', 'C', 'E']
     'B' : ['A', 'C', 'D']
     'C' : ['A', 'B', 'D', 'E']
@@ -169,7 +169,7 @@ if __name__ == '__main__' :
     '''
 
     print("- Graph Adjacency List -")
-    g.adjacency_list()
+    g.print_adjacency_list()
     '''
     - Graph Adjacency List -
     A : ['B', 'C', 'E']
@@ -182,7 +182,7 @@ if __name__ == '__main__' :
     print()
 
     print("- Graph Adjacency Matrix -")
-    g.adjacency_matrix()
+    g.print_adjacency_matrix()
     '''
     - Graph Adjacency Matrix -
     [[ 0.  1.  1.  0.  1.]
