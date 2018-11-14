@@ -94,10 +94,10 @@ class Graph :
                         j = g.vertex_indices[el]
                         self.adjacency_matrix[i, j] = 1
 
-            return self.adjacency_matrix
+            print(self.adjacency_matrix)
 
         else :
-            return dict()
+            print(dict())
 
 if __name__ == '__main__' :
 
@@ -145,7 +145,7 @@ if __name__ == '__main__' :
 
     # 그래프 인접 행렬 출력
     print("- Graph Adjacency Matrix -")
-    print(str(g.adjacency_matrix()))
+    g.adjacency_matrix()
     '''
     - Graph Adjacency Matrix -
     [[ 0.  1.  1.  0.  1.]
@@ -179,8 +179,10 @@ if __name__ == '__main__' :
     E : ['A', 'C']
     '''
 
+    print()
+
     print("- Graph Adjacency Matrix -")
-    print(str(g.adjacency_matrix()))
+    g.adjacency_matrix()
     '''
     - Graph Adjacency Matrix -
     [[ 0.  1.  1.  0.  1.]
