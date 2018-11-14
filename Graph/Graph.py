@@ -109,11 +109,11 @@ if __name__ == '__main__' :
     e = Vertex('E')
 
     # 각 정점 연결 정점 삽입
-    a.insert_neighbors([b,c,e])
-    b.insert_neighbors([a,c])
-    c.insert_neighbors([b,d,a,e])
+    a.insert_neighbors([b, c, e])
+    b.insert_neighbors([a, c])
+    c.insert_neighbors([b, d, a, e])
     d.insert_neighbor(c)
-    e.insert_neighbors([a,c])
+    e.insert_neighbors([a, c])
     '''
     현재 정점 상태
     'A' : ['B', 'C', 'E']
